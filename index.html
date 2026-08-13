@@ -7,13 +7,9 @@
 <title>Shivaa | Web Developer</title>
 
 <meta name="description" content="Shivaa — Web Developer. Building modern digital experiences with creativity and technology.">
-<meta name="theme-color" content="#0b0f14">
+<meta name="theme-color" content="#090d12">
 
 <style>
-/* ================================
-   SHIVAA — PREMIUM PORTFOLIO
-================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root {
@@ -52,17 +48,14 @@ a {
     color: var(--bg);
 }
 
-
-/* ================================
-   NAVBAR
-================================ */
+/* NAVBAR */
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(9,13,18,.78);
+    background: rgba(9,13,18,.82);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--line);
 }
@@ -71,7 +64,6 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 18px 24px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,7 +72,6 @@ header {
 .logo {
     font-size: 1.55rem;
     font-weight: 700;
-    letter-spacing: -.5px;
 }
 
 .logo span {
@@ -102,10 +93,7 @@ header {
     color: var(--gold);
 }
 
-
-/* ================================
-   GENERAL
-================================ */
+/* GENERAL */
 
 section {
     max-width: 1150px;
@@ -117,7 +105,7 @@ section {
     margin-bottom: 55px;
 }
 
-.section-heading > span {
+.section-heading span {
     display: block;
     color: var(--gold);
     font-size: .75rem;
@@ -137,18 +125,13 @@ section {
     color: var(--gold);
 }
 
-
-/* ================================
-   HERO
-================================ */
+/* HERO */
 
 #home {
     min-height: 100vh;
     max-width: 1200px;
-
     display: flex;
     align-items: center;
-
     position: relative;
     overflow: hidden;
 }
@@ -156,13 +139,10 @@ section {
 #home::before {
     content: "";
     position: absolute;
-
     width: 450px;
     height: 450px;
-
     right: -160px;
     top: 25%;
-
     background: var(--orange);
     opacity: .08;
     filter: blur(130px);
@@ -172,13 +152,10 @@ section {
 #home::after {
     content: "";
     position: absolute;
-
     width: 300px;
     height: 300px;
-
     left: -150px;
     bottom: -100px;
-
     background: var(--gold);
     opacity: .045;
     filter: blur(100px);
@@ -205,13 +182,7 @@ section {
     font-size: clamp(5rem, 15vw, 10rem);
     line-height: .83;
     letter-spacing: -6px;
-
-    background: linear-gradient(
-        100deg,
-        #ffffff 15%,
-        var(--gold) 85%
-    );
-
+    background: linear-gradient(100deg,#ffffff 15%,var(--gold) 85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -222,10 +193,8 @@ section {
 
 .hero-content h2 {
     margin-top: 35px;
-
     font-size: clamp(1.7rem, 4vw, 3rem);
     font-weight: 500;
-
     color: var(--blue);
 }
 
@@ -285,20 +254,14 @@ section {
     position: absolute;
     right: -30px;
     bottom: 100px;
-
     font-size: clamp(4rem, 11vw, 9rem);
     font-weight: 800;
     line-height: .8;
-
     color: rgba(136,165,183,.025);
     pointer-events: none;
-    user-select: none;
 }
 
-
-/* ================================
-   ABOUT
-================================ */
+/* ABOUT */
 
 #about {
     border-top: 1px solid var(--line);
@@ -333,23 +296,19 @@ section {
     font-size: .9rem;
 }
 
-
-/* ================================
-   SKILLS
-================================ */
+/* SKILLS */
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 16px;
 }
 
 .skill-card {
-    background: linear-gradient(145deg, var(--card), var(--bg2));
+    background: linear-gradient(145deg,var(--card),var(--bg2));
     border: 1px solid var(--line);
     padding: 30px;
     border-radius: 20px;
-
     transition: .35s;
 }
 
@@ -375,10 +334,7 @@ section {
     font-size: .9rem;
 }
 
-
-/* ================================
-   JOURNEY
-================================ */
+/* JOURNEY */
 
 #journey {
     border-top: 1px solid var(--line);
@@ -396,14 +352,11 @@ section {
 
 .timeline-item::before {
     content: "";
-
     position: absolute;
     width: 9px;
     height: 9px;
-
     background: var(--gold);
     border-radius: 50%;
-
     left: -35px;
     top: 8px;
 }
@@ -424,36 +377,24 @@ section {
     margin-top: 7px;
 }
 
-
-/* ================================
-   PROJECTS
-================================ */
+/* PROJECTS */
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 18px;
 }
 
 .project-card {
     min-height: 300px;
-
     padding: 30px;
-
     border: 1px solid var(--line);
     border-radius: 22px;
-
     background:
-        radial-gradient(
-            circle at 90% 10%,
-            rgba(244,176,68,.08),
-            transparent 35%
-        ),
+        radial-gradient(circle at 90% 10%,rgba(244,176,68,.08),transparent 35%),
         var(--card);
-
     display: flex;
     flex-direction: column;
-
     transition: .4s;
 }
 
@@ -486,10 +427,7 @@ section {
     font-weight: 600;
 }
 
-
-/* ================================
-   SUPPORT
-================================ */
+/* SUPPORT */
 
 #support {
     border-top: 1px solid var(--line);
@@ -502,7 +440,7 @@ section {
 }
 
 .support-info h3 {
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display",serif;
     font-size: 2.5rem;
 }
 
@@ -535,45 +473,33 @@ form {
     font-size: .8rem;
 }
 
-input,
-textarea {
+input,textarea {
     width: 100%;
-
     padding: 14px 16px;
-
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 12px;
-
     color: var(--white);
     font-family: inherit;
-
     outline: none;
     resize: vertical;
-
     transition: .3s;
 }
 
-input:focus,
-textarea:focus {
+input:focus,textarea:focus {
     border-color: var(--gold);
     box-shadow: 0 0 0 3px rgba(244,176,68,.06);
 }
 
 form button {
     width: fit-content;
-
     border: none;
     border-radius: 40px;
-
     padding: 14px 26px;
-
     background: var(--gold);
     color: var(--bg);
-
     font-family: inherit;
     font-weight: 700;
-
     cursor: pointer;
     transition: .3s;
 }
@@ -584,18 +510,11 @@ form button:hover {
     transform: translateY(-2px);
 }
 
-
-/* ================================
-   CONTACT
-================================ */
+/* CONTACT */
 
 #contact {
     text-align: center;
     border-top: 1px solid var(--line);
-}
-
-.center-heading {
-    margin-bottom: 15px;
 }
 
 .contact-text {
@@ -614,9 +533,7 @@ form button:hover {
     padding: 13px 22px;
     border: 1px solid var(--line);
     border-radius: 40px;
-
     color: var(--blue);
-
     transition: .3s;
 }
 
@@ -626,49 +543,27 @@ form button:hover {
     transform: translateY(-3px);
 }
 
-
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
     border-top: 1px solid var(--line);
     padding: 30px 20px;
-
     text-align: center;
 }
 
 footer p {
     color: var(--muted);
     font-size: .8rem;
+    margin: 5px;
 }
 
 footer strong {
     color: var(--gold);
 }
 
+/* MOBILE */
 
-/* ================================
-   REVEAL ANIMATION
-================================ */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(25px);
-    transition: opacity .8s ease, transform .8s ease;
-}
-
-.reveal.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* ================================
-   MOBILE
-================================ */
-
-@media (max-width: 800px) {
+@media (max-width:800px) {
 
     .navbar {
         padding: 16px 18px;
@@ -718,7 +613,7 @@ footer strong {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
 
     .nav-links {
         display: none;
@@ -726,10 +621,6 @@ footer strong {
 
     .hero-content h1 {
         font-size: 4.5rem;
-    }
-
-    .hero-content h2 {
-        margin-top: 25px;
     }
 
     .hero-buttons {
@@ -744,15 +635,9 @@ footer strong {
 </style>
 </head>
 
-
 <body>
 
-<!-- ================================
-     NAVIGATION
-================================= -->
-
 <header>
-
 <nav class="navbar">
 
     <a href="#home" class="logo">
@@ -769,36 +654,23 @@ footer strong {
     </div>
 
 </nav>
-
 </header>
-
 
 <main>
 
-
-<!-- ================================
-     HERO
-================================= -->
+<!-- HERO -->
 
 <section id="home">
 
 <div class="hero-content">
 
-    <p class="hero-intro">
-        Hello, I'm
-    </p>
+    <p class="hero-intro">Hello, I'm</p>
 
-    <h1>
-        Shivaa<span>.</span>
-    </h1>
+    <h1>Shivaa<span>.</span></h1>
 
-    <h2>
-        Web Developer
-    </h2>
+    <h2>Web Developer</h2>
 
-    <p class="hero-tagline">
-        Build Smart.
-    </p>
+    <p class="hero-tagline">Build Smart.</p>
 
     <p class="hero-description">
         I create clean, modern and user-focused digital experiences
@@ -827,20 +699,14 @@ footer strong {
 </section>
 
 
-<!-- ================================
-     ABOUT
-================================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
 <div class="section-heading">
-
     <span>01 — INTRODUCTION</span>
-
     <h2>About Me</h2>
-
 </div>
-
 
 <div class="about-grid">
 
@@ -860,22 +726,15 @@ footer strong {
 
     </div>
 
-
     <div class="about-highlight">
 
         <strong>01</strong>
-
-        <span>
-            Developer in progress
-        </span>
+        <span>Developer in progress</span>
 
         <br><br>
 
         <strong>∞</strong>
-
-        <span>
-            Always learning
-        </span>
+        <span>Always learning</span>
 
     </div>
 
@@ -884,98 +743,51 @@ footer strong {
 </section>
 
 
-<!-- ================================
-     SKILLS
-================================= -->
+<!-- SKILLS -->
 
 <section id="skills">
 
 <div class="section-heading">
-
     <span>02 — CAPABILITIES</span>
-
     <h2>Skills</h2>
-
 </div>
-
 
 <div class="skills-grid">
 
     <div class="skill-card">
-
         <span class="skill-number">01</span>
-
         <h3>HTML</h3>
-
-        <p>
-            Creating structured and semantic web pages.
-        </p>
-
+        <p>Creating structured and semantic web pages.</p>
     </div>
 
-
     <div class="skill-card">
-
         <span class="skill-number">02</span>
-
         <h3>CSS</h3>
-
-        <p>
-            Designing responsive and modern interfaces.
-        </p>
-
+        <p>Designing responsive and modern interfaces.</p>
     </div>
 
-
     <div class="skill-card">
-
         <span class="skill-number">03</span>
-
         <h3>JavaScript</h3>
-
-        <p>
-            Adding interaction and functionality to websites.
-        </p>
-
+        <p>Adding interaction and functionality to websites.</p>
     </div>
 
-
     <div class="skill-card">
-
         <span class="skill-number">04</span>
-
         <h3>Python</h3>
-
-        <p>
-            Building practical programs while learning programming.
-        </p>
-
+        <p>Building practical programs while learning programming.</p>
     </div>
 
-
     <div class="skill-card">
-
         <span class="skill-number">05</span>
-
         <h3>Web Development</h3>
-
-        <p>
-            Building complete digital experiences for the web.
-        </p>
-
+        <p>Building complete digital experiences for the web.</p>
     </div>
 
-
     <div class="skill-card">
-
         <span class="skill-number">06</span>
-
         <h3>Video Editing</h3>
-
-        <p>
-            Creating and editing digital visual content.
-        </p>
-
+        <p>Creating and editing digital visual content.</p>
     </div>
 
 </div>
@@ -983,62 +795,42 @@ footer strong {
 </section>
 
 
-<!-- ================================
-     JOURNEY
-================================= -->
+<!-- JOURNEY -->
 
 <section id="journey">
 
 <div class="section-heading">
-
     <span>03 — JOURNEY</span>
-
     <h2>My Journey</h2>
-
 </div>
-
 
 <div class="timeline">
 
     <div class="timeline-item">
-
         <span>EDUCATION</span>
-
         <h3>Graduation — Appearing</h3>
-
         <p>
             Currently pursuing graduation while developing
             practical technical skills.
         </p>
-
     </div>
 
-
     <div class="timeline-item">
-
         <span>LEARNING</span>
-
         <h3>Web Development</h3>
-
         <p>
             Learning HTML, CSS, JavaScript and modern web
             development through hands-on projects.
         </p>
-
     </div>
 
-
     <div class="timeline-item">
-
         <span>PROGRAMMING</span>
-
         <h3>Python</h3>
-
         <p>
             Exploring Python programming and building small
             practical programs.
         </p>
-
     </div>
 
 </div>
@@ -1046,20 +838,14 @@ footer strong {
 </section>
 
 
-<!-- ================================
-     PROJECTS
-================================= -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
 <div class="section-heading">
-
     <span>04 — SELECTED WORK</span>
-
     <h2>Projects</h2>
-
 </div>
-
 
 <div class="projects-grid">
 
@@ -1080,7 +866,6 @@ footer strong {
 
     </article>
 
-
     <article class="project-card">
 
         <span class="project-number">02 — PYTHON</span>
@@ -1097,7 +882,6 @@ footer strong {
         </a>
 
     </article>
-
 
     <article class="project-card">
 
@@ -1121,28 +905,20 @@ footer strong {
 </section>
 
 
-<!-- ================================
-     SUPPORT
-================================= -->
+<!-- SUPPORT -->
 
 <section id="support">
 
 <div class="section-heading">
-
     <span>05 — SUPPORT</span>
-
     <h2>Need Help?</h2>
-
 </div>
-
 
 <div class="support-grid">
 
     <div class="support-info">
 
-        <h3>
-            Let's talk.
-        </h3>
+        <h3>Let's talk.</h3>
 
         <p>
             Have a question, suggestion or something you'd
@@ -1150,11 +926,11 @@ footer strong {
         </p>
 
         <p>
-            I'll get back to you as soon as possible.
+            Your message will open in your email app and can
+            be sent directly to me.
         </p>
 
     </div>
-
 
     <form id="supportForm">
 
@@ -1162,9 +938,7 @@ footer strong {
 
             <div class="form-group">
 
-                <label for="name">
-                    Name
-                </label>
+                <label for="name">Name</label>
 
                 <input
                     type="text"
@@ -1175,12 +949,9 @@ footer strong {
 
             </div>
 
-
             <div class="form-group">
 
-                <label for="email">
-                    Email
-                </label>
+                <label for="email">Email</label>
 
                 <input
                     type="email"
@@ -1193,12 +964,9 @@ footer strong {
 
         </div>
 
-
         <div class="form-group">
 
-            <label for="subject">
-                Subject
-            </label>
+            <label for="subject">Subject</label>
 
             <input
                 type="text"
@@ -1209,12 +977,9 @@ footer strong {
 
         </div>
 
-
         <div class="form-group">
 
-            <label for="message">
-                Message
-            </label>
+            <label for="message">Message</label>
 
             <textarea
                 id="message"
@@ -1224,7 +989,6 @@ footer strong {
             ></textarea>
 
         </div>
-
 
         <button type="submit">
             Send Message →
@@ -1237,6 +1001,147 @@ footer strong {
 </section>
 
 
-<!-- ================================
-     CONNECT
-=====================
+<!-- CONNECT -->
+
+<section id="contact">
+
+<div class="section-heading">
+
+    <span>06 — CONNECT</span>
+
+    <h2>Find Me Online</h2>
+
+</div>
+
+<p class="contact-text">
+    Let's connect and stay in touch.
+</p>
+
+<div class="social-links">
+
+    <a
+        href="mailto:businessesshiva@gmail.com"
+    >
+        Email ↗
+    </a>
+
+    <a
+        href="https://www.instagram.com/imshiva_ambedkar"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Instagram ↗
+    </a>
+
+    <a
+        href="https://www.linkedin.com/in/shivaambedkar"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        LinkedIn ↗
+    </a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+    © <span id="year"></span>
+    <strong>Shivaa</strong>. All rights reserved.
+</p>
+
+<p>
+    Built with HTML, CSS & JavaScript.
+</p>
+
+</footer>
+
+
+<script>
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* SUPPORT FORM */
+
+document.getElementById("supportForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const subject =
+        document.getElementById("subject").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    if (!name || !email || !subject || !message) {
+
+        alert("Please complete all fields.");
+
+        return;
+    }
+
+
+    const mailSubject =
+        encodeURIComponent(
+            "Support: " + subject
+        );
+
+
+    const mailBody =
+        encodeURIComponent(
+`Hello Shivaa,
+
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+
+Sent from Shivaa's website.`
+        );
+
+
+    window.location.href =
+        `mailto:businessesshiva@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+
+});
+
+
+/* SMOOTH CONNECT BUTTON */
+
+document.querySelectorAll('a[href="#contact"]').forEach(link => {
+
+    link.addEventListener("click", function(event) {
+
+        event.preventDefault();
+
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+   </html>
